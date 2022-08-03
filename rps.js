@@ -63,8 +63,10 @@ function game() {
 
     if (playerWins > computerWins) {
         winner = " the player!";
-    } else {
+    } else if (computerWins > playerWins) {
         winner = " the computer!"
+    } else {
+        winner = " both of you!"
     }
     console.log("The player won " + playerWins + " times. The computer won " + computerWins + " times. The winner is" + winner)
 }
